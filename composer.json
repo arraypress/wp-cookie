@@ -1,0 +1,47 @@
+{
+  "name": "arraypress/wp-cookie",
+  "version": "1.0.0",
+  "description": "A PHP library providing enhanced cookie management for WordPress, featuring secure cookie handling, multisite support, and comprehensive cookie operations with proper WordPress integration.",
+  "type": "library",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/arraypress/wp-cookie/",
+  "authors": [
+    {
+      "name": "David Sherlock",
+      "homepage": "https://arraypress.com/"
+    }
+  ],
+  "require": {
+    "php": ">=7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "ArrayPress\\WP\\": "src/"
+    }
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true,
+    "preferred-install": "dist"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "support": {
+    "issues": "https://github.com/arraypress/wp-cookie/issues",
+    "source": "https://github.com/arraypress/wp-cookie"
+  },
+  "keywords": [
+    "wordpress",
+    "cookies",
+    "cookie-management",
+    "multisite",
+    "security",
+    "http-cookies",
+    "wordpress-cookies",
+    "cookie-handling",
+    "cookie-utils",
+    "wordpress-security",
+    "json-cookies",
+    "session-handling"
+  ]
+}
