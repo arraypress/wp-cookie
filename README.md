@@ -31,16 +31,16 @@ composer require arraypress/wp-cookie
 ### Setting Cookies
 
 ```php
-use ArrayPress\WP\Cookie;
+use ArrayPress\Utils\Cookie;
 
 // Set a basic cookie
-Cookie::set( 'my_cookie', 'cookie_value');
+Cookie::set( 'my_cookie', 'cookie_value' );
 
 // Set a cookie with expiration time
 Cookie::set( 'my_cookie', 'value', Cookie::hours( 2 ) );  // Expires in 2 hours
 
 // Set a secure cookie with WordPress defaults
-Cookie::set_secure( 'my_cookie', 'cookie_value');
+Cookie::set_secure( 'my_cookie', 'cookie_value' );
 ```
 
 ### Time Utilities
@@ -60,13 +60,13 @@ Cookie::set( 'years_cookie', 'value', Cookie::years( 1 ) );      // 1 year
 
 ```php
 // Get a cookie value
-$value = Cookie::get( 'my_cookie');
+$value = Cookie::get( 'my_cookie' );
 
 // Get with default value if cookie doesn't exist
 $value = Cookie::get( 'my_cookie', 'default_value' );
 
 // Check if a cookie exists
-if ( Cookie::exists(  'my_cookie') ) {
+if ( Cookie::exists(  'my_cookie' ) ) {
     // Cookie exists
 }
 ```
@@ -133,7 +133,7 @@ if ( $remaining !== null ) {
 // Set a cookie and check for errors
 if ( ! Cookie::set( 'my_cookie', 'value' ) ) {
     $error = Cookie::get_last_error();
-    error_log("Cookie error: " . $error);
+    error_log( "Cookie error: " . $error );
 }
 ```
 
@@ -151,7 +151,7 @@ $options = [
     'samesite' => Cookie::SAMESITE_STRICT
 ];
 
-Cookie::set_secure( 'custom_cookie', 'value', $options);
+Cookie::set_secure( 'custom_cookie', 'value', $options );
 ```
 
 ## Security Features
